@@ -1,5 +1,8 @@
 package string;
 
+import java.lang.reflect.Array;
+import java.util.*;
+
 /**
  * @ClassName checkRecord
  * @Description TODO
@@ -9,6 +12,7 @@ package string;
  */
 public class checkRecord {
     public boolean checkRecord(String s) {
+//        HashMap
         return s.indexOf('A') == s.lastIndexOf('A') && !s.contains("LLL");
     }
 }
