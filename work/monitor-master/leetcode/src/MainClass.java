@@ -1,54 +1,37 @@
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedList;
+import java.util.*;
 
 public class MainClass {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.strWithout3a3b(1, 2));
+
     }
 }
 
 class Solution {
-    // 谁多先放谁，并且不能连续三次一样.
-    public String strWithout3a3b(int A, int B) {
-        StringBuilder res = new StringBuilder();
-        // 计重复的次数
-        int count = 0;
-        // 上一个字母.
-        char lastCh = 'c';
-        while (A != 0 || B != 0) {
-            if (count == 2) {
-                if (lastCh == 'a') {
-                    B--;
-                    res.append('b');
-                    lastCh = 'b';
-                } else {
-                    A--;
-                    res.append('a');
-                    lastCh = 'a';
-                }
-                count = 1;
-            } else if (A > B) {
-                if (lastCh == 'a') {
-                    count++;
-                } else {
-                    count = 1;
-                }
-                A--;
-                res.append('a');
-                lastCh = 'a';
+    public int brokenCalc(int x, int y) {
+        int steps = 0;
+        // 神搜.
+        while (y != x) {
+            if (y < x) {
+                return steps + x - y;
             } else {
-                if (lastCh == 'b') {
-                    count++;
+                if (y % 2 == 1) {
+                    y++;
                 } else {
-                    count = 1;
+                    y /= 2;
                 }
-                B--;
-                res.append('b');
-                lastCh = 'b';
             }
+            steps++;
         }
-        return res.toString();
+        // 第二种解法.
+        if (x >= y) {
+            return x - y;
+        } else if (y % 2 != 0) {
+            // y为奇数，那么+1.
+            return 1 + brokenCalc(x, y + 1);
+        } else {
+            // 为偶数，则除2.
+            return 1 + brokenCalc(x, y / 2);
+        }
     }
 }
