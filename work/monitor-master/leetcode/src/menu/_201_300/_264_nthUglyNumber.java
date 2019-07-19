@@ -1,13 +1,13 @@
-package tag.dp;
+package menu._201_300;
 
 /**
- * @ClassName nthUglyNumber
+ * @ClassName _264_nthUglyNumber
  * @Description TODO
  * @Author 任耀
  * @Date 2019/2/14 22:04
  * @Version 1.0
  */
-public class nthUglyNumber {
+public class _264_nthUglyNumber {
     public int nthUglyNumber(int n) {
         int[] num = new int[n];
         num[0] = 1;
