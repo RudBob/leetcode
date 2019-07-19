@@ -1,6 +1,14 @@
-package tag.others.day02;
+package menu._000_100;
 
-public class intToRoman {
+/**
+ * @ClassName _012_intToRoman
+ * @Description TODO
+ * @Author 任耀
+ * @Date 2019/7/17 21:00
+ * @Version 1.0
+ */
+public class _012_intToRoman {
+
     public String intToRoman(int num) {
         StringBuilder res = new StringBuilder();
         while (num >= 1000) {
@@ -58,21 +66,18 @@ public class intToRoman {
         return res.toString();
     }
 
+    static String[] roman = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+    static int[] nums = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+
     public String intToRoman2(int num) {
         StringBuilder res = new StringBuilder();
-        String[] roman = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
-        int[] nums = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
-        for (int i = 0; num > 0; i++) {
-            while (num >= nums[i]) {
+        int i =0;
+        while(num > 0){
+            if(num >= nums[i]){
+                num = num - nums[i];
                 res.append(roman[i]);
-                num -= nums[i];
-            }
-            if(nums[i] == 1){
-                break;
-            }
-            if (num >= nums[++i]) {
-                num -= nums[i];
-                res.append(roman[i]);
+            }else{
+                i++;
             }
         }
         return res.toString();

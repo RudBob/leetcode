@@ -4,13 +4,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @ClassName combinationSum4
- * @Description TODO
- * @Author 任耀
- * @Date 2019/2/11 18:26
- * @Version 1.0
- */
 public class combinationSum4 {
     /**
      * 简单递归

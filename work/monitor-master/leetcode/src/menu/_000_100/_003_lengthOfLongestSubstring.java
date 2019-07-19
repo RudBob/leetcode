@@ -5,15 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * @ClassName _003_lengthOfLongestSubstring
- * @Description TODO
- * @Author 任耀
- * @Date 2019/7/15 12:36
- * @Version 1.0
- */
 public class _003_lengthOfLongestSubstring {
-
     // 滑动窗口
     public int lengthOfLongestSubstring(String s) {
         char[] chs = s.toCharArray();

@@ -1,6 +1,6 @@
-package tag.greedy;
+package menu._901_1000;
 
-public class minDeletionSize {
+public class _944_minDeletionSize {
     public int minDeletionSize(String[] A) {
         StringBuilder[] a = new StringBuilder[A.length];
         char[][] aCh = new char[A.length][];

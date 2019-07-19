@@ -1,13 +1,13 @@
-package tag.dp.maxProfit;
+package menu._301_400;
 
 /**
- * @ClassName maxProfit309
+ * @ClassName _309_maxProfit
  * @Description TODO
  * @Author 任耀
- * @Date 2019/2/11 19:51
+ * @Date 2019/7/19 14:17
  * @Version 1.0
  */
-public class maxProfit309 {
+public class _309_maxProfit {
 
     public int maxProfit(int[] prices) {
         if (prices.length <= 1) {

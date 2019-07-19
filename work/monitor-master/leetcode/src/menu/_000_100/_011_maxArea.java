@@ -1,14 +1,13 @@
-package tag.others.day02;
+package menu._000_100;
 
-import java.io.IOException;
-
-public class maxArea {
-    public static void main(String[] args) throws IOException {
-        maxArea m = new maxArea();
-        int[] h = {1, 8, 6, 2, 5, 4, 8, 3, 7};
-        System.out.println(m.maxArea(h));
-    }
-
+/**
+ * @ClassName _011_maxArea
+ * @Description TODO
+ * @Author 任耀
+ * @Date 2019/7/17 21:11
+ * @Version 1.0
+ */
+public class _011_maxArea {
     public int maxArea(int[] height) {
         int left = 0, right = height.length - 1;
         return maxArea(height, left, right);

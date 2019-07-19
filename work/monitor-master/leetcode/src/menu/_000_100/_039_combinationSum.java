@@ -1,9 +1,9 @@
-package tag.recall.combinationSum;
+package menu._000_100;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class combinationSum {
+public class _039_combinationSum {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>();
         List<Integer> path = new ArrayList<>();

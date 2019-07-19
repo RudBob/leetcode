@@ -1,13 +1,13 @@
-package tag.math;
+package menu._201_300;
 
 /**
- * @ClassName isUgly
+ * @ClassName _263_isUgly
  * @Description TODO
  * @Author 任耀
  * @Date 2019/2/14 22:04
  * @Version 1.0
  */
-public class isUgly {
+public class _263_isUgly {
     public boolean isUgly(int num) {
         if (num == 0) {
             return false;

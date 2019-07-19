@@ -1,16 +1,17 @@
-package tag.dp.rob;
+package menu._301_400;
+
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @ClassName rob3
+ * @ClassName _337_rob3
  * @Description TODO
  * @Author 任耀
- * @Date 2019/2/10 13:45
+ * @Date 2019/7/19 14:11
  * @Version 1.0
  */
-public class rob3 {
+public class _337_rob3 {
 
 
     public int rob(TreeNode root) {
@@ -58,15 +59,5 @@ public class rob3 {
                     Math.max(contain(root.right, containMap, notContainMap), notContain(root.right, containMap, notContainMap)));
         }
         return notContainMap.get(root);
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
     }
 }

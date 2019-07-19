@@ -1,7 +1,7 @@
-package tag.others.day01;
+package menu._000_100;
 
-public class isPalindrome {
-    public boolean isPalindrome(int x) {
+public class _009_isPalindrome {
+    public boolean isPalindrome1(int x) {
         if(x < 0 || (x % 10 == 0 && x != 0)) {
             return false;
         }

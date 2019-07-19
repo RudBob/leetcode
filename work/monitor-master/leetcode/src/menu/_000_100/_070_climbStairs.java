@@ -1,13 +1,14 @@
-package tag.dp;
+package menu._000_100;
 
 /**
- * @ClassName climbStairs70
+ * @ClassName _070_climbStairs
  * @Description TODO
  * @Author 任耀
- * @Date 2019/2/4 11:32
+ * @Date 2019/7/19 14:17
  * @Version 1.0
  */
-public class climbStairs70 {
+public class _070_climbStairs {
+
     /**
      * 直接推过去
      */

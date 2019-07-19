@@ -1,7 +1,7 @@
-package tag.dp;
+package menu._901_1000;
 
 // 5ms
-public class mincostTickets {
+public class _983_mincostTickets {
     public int mincostTickets(int[] days, int[] costs) {
         // 节省空间，所以不使用365，使用今天旅行的最后一天
         int[] lastAllDaysCost = new int[days[days.length - 1] + 1];

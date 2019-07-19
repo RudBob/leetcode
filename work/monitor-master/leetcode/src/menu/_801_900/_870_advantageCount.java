@@ -1,10 +1,10 @@
-package tag.greedy;
+package menu._801_900;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class advantageCount {
+public class _870_advantageCount {
     public int[] advantageCount(int[] A, int[] B) {
         Arrays.sort(A);
         List<Integer> a = new ArrayList<>();

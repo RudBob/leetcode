@@ -1,12 +1,5 @@
 package tag.string;
 
-/**
- * @ClassName longestPalindrome
- * @Description TODO
- * @Author 任耀
- * @Date 2019/1/29 11:16
- * @Version 1.0
- */
 public class longestPalindrome {
     // 最暴力的方法
     public String longestPalindrome(String s) {
